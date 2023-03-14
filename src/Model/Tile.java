@@ -45,6 +45,6 @@ public class Tile {
 
     @Override
     public String toString(){
-        return "ciao";
+        return Integer.toString(row) + " " + Integer.toString(col);
     }
 }

@@ -51,8 +51,7 @@ public class Board {
     public List<Tile> checkLegalMoves(Tile t) {
         if(t.isOccupied()) {
             Movement moves = PieceMovement.getMovement(t.getPiece().getSymbol());
-            moves.getMoves(t, this);
-            System.out.println(moves);
+            System.out.println(moves.getMoves(t, this));
         }
         return null;
     }
